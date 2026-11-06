@@ -1,0 +1,12 @@
+# CI for bedrock-bridge: build and test on every pull request and on pushes to main.
+# Gate: G0a-5 prerequisite — this repo must exist with CI green before BedRockTickTest begins.
+when:
+  - event: pull_request
+  - event: push
+    branch: main
+
+steps:
+  - name: build
+    image: eclipse-temurin:25-jdk
+    commands:
+      - ./gradlew build --no-daemon --parallel 2>&1

@@ -1,0 +1,2 @@
+// bedrock-bridge:api — public contracts; no Geyser/Floodgate dependency.
+description = "Bedrock Bridge API — public interfaces and data types"

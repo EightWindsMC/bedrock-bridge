@@ -1,0 +1,11 @@
+// bedrock-bridge:velocity — Velocity proxy plugin.
+// Handles routing between Java and Bedrock players on the proxy side.
+description = "Bedrock Bridge velocity — Velocity proxy plugin"
+
+dependencies {
+    implementation project(":api")
+    implementation project(":common")
+
+    // TODO(bedrock-lead): add Velocity API dependency when proxy work begins
+    // compileOnly "com.velocitypowered:velocity-api:<version>"
+}

@@ -1,0 +1,25 @@
+// Root build file — shared configuration for all subprojects.
+
+subprojects {
+    apply plugin: "java"
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(libs.versions.java.get())
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation libs.junit.api
+        testRuntimeOnly libs.junit.engine
+        testRuntimeOnly libs.junit.launcher
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}

@@ -1,0 +1,6 @@
+// bedrock-bridge:common — shared platform-agnostic logic.
+description = "Bedrock Bridge common — shared logic, no server runtime dependency"
+
+dependencies {
+    implementation project(":api")
+}

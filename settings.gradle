@@ -1,0 +1,3 @@
+rootProject.name = "bedrock-bridge"
+
+include("api", "common", "bedrock", "velocity")

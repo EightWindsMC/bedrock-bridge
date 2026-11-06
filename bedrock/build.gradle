@@ -1,0 +1,13 @@
+// bedrock-bridge:bedrock — Geyser/Floodgate plugin implementation.
+// G0a infrastructure phase: placeholder. Bedrock Lead: add the Geyser maven repo
+// and dependency here when BedRockTickTest (G0a-5) work begins.
+description = "Bedrock Bridge bedrock — Geyser plugin implementation"
+
+dependencies {
+    implementation project(":api")
+    implementation project(":common")
+
+    // TODO(bedrock-lead): uncomment when implementing BedRockTickTest (G0a-5)
+    // repositories { maven { url = uri("https://repo.opencollab.dev/main/") } }
+    // compileOnly "org.geysermc.geyser:api:<version>"
+}
